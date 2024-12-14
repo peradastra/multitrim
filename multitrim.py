@@ -1251,8 +1251,8 @@ def main():
 
 		full_trim_pe(f, r, post_trim_f, post_trim_r, final_output, cleaned_adapters, threads, fq, fp, score, minlen, mid, mid_q, prefix, compressor, compression_level, phred, advanced, skip_fp, skip_fq)
 
-		if compressor not in ["dsrc"]:
-			falco_qc_pe(f, r, post_trim_f, post_trim_r, pre_qc_f, post_qc_f, pre_qc_r, post_qc_r, threads, that_aint_falco)
+		# if compressor not in ["dsrc"]:
+		# 	falco_qc_pe(f, r, post_trim_f, post_trim_r, pre_qc_f, post_qc_f, pre_qc_r, post_qc_r, threads, that_aint_falco)
 
 	else:
 		#one input; SE behavior
@@ -1271,8 +1271,8 @@ def main():
 
 		full_trim_se(u, post_trim, final_output, cleaned_adapters, threads, fq, fp, score, minlen, mid, mid_q, prefix, compressor, compression_level, phred, advanced, skip_fp, skip_fq)
 
-		if compressor not in ["dsrc"]:
-			falco_qc_se(u, post_trim, pre_qc, post_qc, threads, that_aint_falco)
+		# if compressor not in ["dsrc"]:
+		# 	falco_qc_se(u, post_trim, pre_qc, post_qc, threads, that_aint_falco)
 
 
 	print("Trimming complete.")
